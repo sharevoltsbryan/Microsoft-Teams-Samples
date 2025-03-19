@@ -1,52 +1,37 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
-  "version": "1.0.3",
-  "manifestVersion": "1.19",
-  "id": "<<app-id>>",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "74a508ce-0d03-4a40-b7f6-bbab53e2eaf3",
+  "packageName": "com.sharevolts.sharevoltsbot",
   "developer": {
-    "name": "Contoso",
-    "websiteUrl": "https://example.azurewebsites.net",
-    "privacyUrl": "https://teams.microsoft.com",
-    "termsOfUseUrl": "https://teams.microsoft.com"
-  },
-  "icons": {
-    "color": "color.png",
-    "outline": "outline.png"
+    "name": "Sharevolts",
+    "websiteUrl": "https://www.sharevolts.com",
+    "privacyUrl": "https://www.sharevolts.com/privacy",
+    "termsOfUseUrl": "https://www.sharevolts.com/terms"
   },
   "name": {
-    "short": "Calling bot",
-    "full": "Calling bot"
+    "short": "SharevoltsBotV1",
+    "full": "SharevoltsBot ayuda en Teams respondiendo preguntas y automatizando tareas."
   },
   "description": {
-    "short": "Calling bot",
-    "full": "Calling bot"
+    "short": "Un bot para Teams",
+    "full": "Este bot ayuda en Teams respondiendo preguntas y automatizando tareas."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
   },
   "accentColor": "#FFFFFF",
   "bots": [
     {
-      "botId": "<<microsoft-app-id>>",
-      "scopes": [
-        "personal",
-        "team",
-        "groupChat"
-      ],
-      "commandLists": [
-        {
-          "commands": [
-            {
-              "title": "welcome",
-              "description": "Resend welcome card of this Bot"
-            }
-          ],
-          "scopes": [
-            "personal"
-          ]
-        }
-      ],
-      "supportsFiles": false,
+      "botId": "74a508ce-0d03-4a40-b7f6-bbab53e2eaf3",
+      "scopes": [ "personal", "team", "groupChat" ],
+      "supportsFiles": true,
       "isNotificationOnly": false,
       "supportsCalling": true,
-      "supportsVideo": true
+      "supportsVideo": true,
+      "commandLists": []
     }
   ],
   "permissions": [
@@ -54,10 +39,10 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "<<domain-name>>"
+    "botweb-brcybhddg5haewd7.canadacentral-01.azurewebsites.net"
   ],
   "webApplicationInfo": {
-    "id": "<<microsoft-app-id>>",
-    "resource": "https://RscString"
+    "id": "74a508ce-0d03-4a40-b7f6-bbab53e2eaf3",
+    "resource": "https://api.botframework.com"
   }
 }

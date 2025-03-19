@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/21cd0afc-ca19-4888-a4dd-a569871f184a/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/BotSharevoltsDeploy",
+    "appService.deploySubpath": "."
+}
